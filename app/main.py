@@ -4,7 +4,7 @@ app = FastAPI()
 
 import pandas as pd
 
-df = pd.read_csv("C:\\Users\\Emmanuel\\Documents\\SoyHenry\\PI - SUP\\Proyecto1_SUP07\\csv\\netflix.csv",delimiter = ',',encoding = "utf-8")
+df = pd.read_csv("Proyecto1_SUP07\\csv\\netflix.csv",delimiter = ',',encoding = "utf-8")
 
 df["date_added"] = pd.to_datetime(df["date_added"])
 
