@@ -2,6 +2,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+@app.get("")
+async def index():
+    return {"¡Hola! Para ver los diccionarios porfavor utilice los siguientes decoradores: /2019 /2020 /2021 según el año que desee consultar."}
+
 @app.get("/2019")
 async def index():
     return {"2019":"df2019dicc"}
